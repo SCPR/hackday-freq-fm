@@ -351,6 +351,9 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
+button:focus {outline:0;}
+
+
 /*
  * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.

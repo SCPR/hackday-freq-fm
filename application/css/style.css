@@ -60,6 +60,10 @@
         border-radius: 18px;
         font-size: 10px;
     }
+    .btn--filled.btn--green {
+        background: #21C064;
+        color: white;
+    }
 
 /* GO! BUTTON STYLES */
 .go-button {
