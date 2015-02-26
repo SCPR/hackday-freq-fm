@@ -2,70 +2,22 @@
   <h1>Follow your favorite shows</h1>
 </header>
 <section class="follow-shows has-navbar bg-shaded">
-  <ul class="table-view table-view--user">
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
-    <li class="table-item clearfix">
-      <img src="images/program_avatars/program_avatar_airtalk@2x.png" alt="show avatar" class="user-avatar" />
-      <div class="user-details">
-        <h3 class="user-name">Show Title</h3>
-        <button class="btn btn--blue btn--small">Follow</button>
-      </div>
-    </li>
+  <ul class="table-view table-view--user shows">
+    <% _.each(collection, function(item) { %>
+      <% if (item.user_role === "show") { %>
+        <li class="table-item clearfix">
+          <img src="images/program_avatars/program_avatar_<%= item.user_slug %>@2x.png" alt="show avatar" class="user-avatar" />
+          <div class="user-details">
+            <h3 class="user-name"><%= item.user_name %></h3>
+            <% if (item.following === true) { %>
+              <button class="btn btn--green btn--small btn--filled">Following</button>
+            <% } else { %>
+              <button class="btn btn--blue btn--small">Follow</button>
+            <% } %>
+          </div>
+        </li>
+      <% } %>
+    <% }); %>
   </ul>
 </section>
 <button class="footer--fixed go-button go-button--blue action--follow-shows">

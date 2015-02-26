@@ -21,26 +21,6 @@
         return data;
     };
 
-    App.Views.ApplicationWrapper = Backbone.View.extend({
-
-        el: "body",
-
-        initialize: function(){
-            this.render();
-        },
-
-        events: {
-
-        },
-
-        render: function(){
-            //$(".kpcc-header").html(_.template(template("templates/header.html")));
-            $(".data-details").html(_.template(template("templates/welcome.html")));
-            //$(".kpcc-footer").html(_.template(template("templates/footer.html")));
-        }
-
-    });
-
     $(function(){
         window.app = new App.Router();
         Backbone.history.start({
