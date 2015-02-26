@@ -98,9 +98,38 @@
     width: 100%;
 }
 
+/* TAB BAR STYLES */
+.tab-bar {
+    background: black;
+}
+    .tab-bar ul {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+        .tab-bar li {
+            float: left;
+            width:33.3%;
+        }
+            .tab-bar a {
+                display: block;
+                text-align: center;
+                height: 60px;
+                width: 100%;
+            }
+                .tab-bar a.active {
+                    background: #22C064;
+                }
+                .tab-bar a img {
+                    margin-top: 12px;
+                }
+
 /* NAVBAR STYLES */
 .has-navbar {
     margin-top: 65px;
+}
+.has-tabbar {
+    margin-bottom: 65px;
 }
 .has-ledge {
     border-bottom: 1px solid #C2C2C2;
@@ -138,6 +167,9 @@
     margin:0 12px;
     padding:12px 0;
 }
+    .table-view--content {
+        margin:0;
+    }
 .table-item {
     margin-bottom: 13px;
 }
@@ -206,3 +238,58 @@
         left:50%;
         margin-left: -120px;
     }
+
+/* RECOMMENDATIONS VIEW */
+.recommendations {
+    padding: 15px;
+}
+    .rec-block .section-heading {
+        border-bottom: 1px solid #979797;
+        text-align: center;
+    }
+        .section-heading h2 {
+            color: #1452E3;
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+.content-item {
+    background: url('../images/caret-forward.png') no-repeat right center;
+    background-size: 8px 14px;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 20px 0;
+}
+    .content-item .tile {
+        float: left;
+        margin-right: 13px;
+        width:50px;
+    }
+    .content-item .content-details {
+        margin-right: 32px;
+    }
+    .content-item .show-name {
+        color: #7D7D7D;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .content-item .episode-title {
+        color: #1C1C1C;
+        font-size: 14px;
+        margin: 0;
+    }
+    .content-from {
+        margin-bottom: 8px;
+    }
+    .content-from p {
+        color: #1C1C1C;
+        font-size: 11px;
+        margin: 0;
+    }
+    .content-from img {
+        float: left;
+        margin-right: 8px;
+        margin-top: -6px;
+    }
+
