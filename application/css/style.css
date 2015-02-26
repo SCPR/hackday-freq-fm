@@ -1,3 +1,14 @@
+/* UTILITY CLASSES */
+.bg-shaded {
+    background: #F3F3F3;
+    height:100%;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* INPUT STYLES */
 .input, input {
     border:0;
@@ -17,13 +28,13 @@
 
 /* BUTTON STYLES */
 .btn {
-    background: white;
+    background: transparent;
     border-width: 1px;
     border-style: solid;
     border-radius: 50px;
     font-weight: 400;
     line-height: 1em;
-    padding: 4px 8px;
+    padding: 6px 12px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -45,20 +56,37 @@
         padding: 14px 0 10px;
         width: 240px;
     }
+    .btn--small {
+        border-radius: 18px;
+        font-size: 10px;
+    }
 
 /* GO! BUTTON STYLES */
 .go-button {
     background: #ccc;
     border: 0;
     color: white;
+    font-size: 18px;
     text-align: center;
+    text-transform: uppercase;
 }
+    .go-button .label {
+        margin-right: 4px;
+        vertical-align: text-bottom;
+    }
     .go-button .arrow {
         margin-top: 5px;
         width: 21px;
     }
+    .go-button .arrow-small {
+        margin-top: 8px;
+        width: 18px;
+    }
     .go-button--green {
         background: #21C064;
+    }
+    .go-button--blue {
+        background: #1C56FF;
     }
 
 .footer--fixed {
@@ -74,6 +102,9 @@
 .has-navbar {
     margin-top: 65px;
 }
+.has-ledge {
+    border-bottom: 1px solid #C2C2C2;
+}
 .navbar {
     background: white;
     position: fixed;
@@ -83,6 +114,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 300;
 }
     .navbar h1 {
         font-size: 17px;
@@ -99,6 +131,42 @@
         .navbar .nav--back img {
             width: 13px;
         }
+
+/* TABLE VIEW STYLES */
+.table-view {
+    list-style: none;
+    margin:0 12px;
+    padding:12px 0;
+}
+.table-item {
+    margin-bottom: 13px;
+}
+.table-item .user-avatar {
+    float: left;
+    margin-right: 13px;
+    width: 40px;
+}
+.table-item .user-name {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.table-item .user-details {
+    border-bottom: 1px solid #ccc;
+    height:40px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: 53px;
+}
+    .table-item .user-details .btn {
+        position: absolute; 
+        right:0;
+        top: 50%;
+        margin-top: -18px;
+    }
 
 /* WELCOME VIEW */
 .welcome {
