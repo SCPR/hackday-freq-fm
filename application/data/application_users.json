@@ -19,7 +19,7 @@
     "user_slug": "filmweek",
     "user_avatar": null,
     "uuid": 102,
-    "following": true,
+    "following": false,
     "user_role": "show",
     "history": []
 }, {
@@ -35,41 +35,46 @@
     "user_slug": "loh-down-on-science",
     "user_avatar": null,
     "uuid": 104,
-    "following": true,
+    "following": false,
     "user_role": "show",
     "history": []
 }, {
     "uuid": 1,
     "user_name": "Johnny Ferguson",
-    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/73.jpg",
+    "user_slug": "johnny-ferguson",
+    "user_avatar": null,
     "following": false,
     "user_role": "user",
     "history": []
 }, {
     "uuid": 2,
     "user_name": "Janice Hayes",
-    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/73.jpg",
+    "user_slug": "janice-hayes",
+    "user_avatar": null,
     "following": false,
     "user_role": "user",
     "history": []
 }, {
     "uuid": 3,
     "user_name": "Albert Ellis",
-    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/peterlandt/73.jpg",
-    "following": true,
+    "user_slug": "albert-ellis",
+    "user_avatar": null,
+    "following": false,
     "user_role": "user",
     "history": []
 }, {
     "uuid": 4,
     "user_name": "Allison Grayce",
-    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/73.jpg",
-    "following": true,
+    "user_slug": "allison-grayce",
+    "user_avatar": null,
+    "following": false,
     "user_role": "user",
     "history": []
 }, {
     "uuid": 5,
     "user_name": "Arthur Fuller",
-    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/boheme/73.jpg",
+    "user_slug": "arthur-fuller",
+    "user_avatar": null,
     "following": false,
     "user_role": "user",
     "history": []

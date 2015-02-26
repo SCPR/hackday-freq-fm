@@ -6,7 +6,7 @@
     <% _.each(collection, function(item) { %>
       <% if (item.user_role === "user") { %>
         <li class="table-item clearfix">
-          <img src="<%= item.user_avatar %>" alt="show avatar" class="user-avatar" />
+          <img src="images/user_avatars/<%= item.user_slug %>.png" alt="show avatar" class="user-avatar" />
           <div class="user-details">
             <h3 class="user-name"><%= item.user_name %></h3>
             <% if (item.following === true) { %>
