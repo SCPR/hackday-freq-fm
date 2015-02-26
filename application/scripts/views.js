@@ -13,93 +13,57 @@
 
         routes: {
             "": "renderWelcomeScreen",
-
             "welcome/": "renderWelcomeScreen",
-
             "sign-in/": "renderLogInScreen",
-
             "follow-shows/": "renderFollowShowsScreen",
-
             "follow-people/": "renderFollowPeopleScreen",
-
             "recommendations/": "renderRecommendationsScreen",
-
         },
 
         renderWelcomeScreen: function(){
-
-            console.log("renderWelcomeScreen");
-
             if (this.applicationWelcomeScreen){
                 this.applicationWelcomeScreen.undelegateEvents();
             }
-
             this.applicationWelcomeScreen = new App.Views.WelcomeScreen({
                 container: ".data-details"
             });
-
             return this.applicationWelcomeScreen;
-
         },
 
         renderLogInScreen: function(){
-
-            console.log("renderLogInScreen");
-
             this.applicationLogInScreen = new App.Views.LogInScreen({
                 container: ".data-details"
             });
-
             return this.applicationLogInScreen;
-
         },
 
         renderFollowShowsScreen: function(){
-
-            console.log("renderFollowShowsScreen");
-
             if (this.applicationFollowShowsScreen){
                 this.applicationFollowShowsScreen.undelegateEvents();
             }
-
             this.applicationFollowShowsScreen = new App.Views.FollowShowsScreen({
                 container: ".data-details"
             });
-
             return this.applicationFollowShowsScreen;
-
         },
 
         renderFollowPeopleScreen: function(){
-
-            console.log("renderFollowPeopleScreen");
-
             if (this.applicationFollowPeopleScreen){
                 this.applicationFollowPeopleScreen.undelegateEvents();
             }
-
             this.applicationFollowPeopleScreen = new App.Views.FollowPeopleScreen({
                 container: ".data-details"
             });
-
             return this.applicationFollowPeopleScreen;
-
         },
 
         renderRecommendationsScreen: function(){
-
-            console.log("renderRecommendationsScreen");
-
             $(".data-details").empty();
-
             this.applicationRecommendationsScreen = new App.Views.RecommendationsScreen({
                 container: ".data-details"
             });
-
             return this.applicationRecommendationsScreen;
-
         },
-
     });
 
 
@@ -288,13 +252,9 @@
             $(container).html(_.template(this.template));
         },
 
-
-
-        /*
         events: {
-            "click .nav--back": "navigateToWelcome",
-        },
 
+        },
 
         navigateToWelcome: function(){
             window.app.navigate("#welcome/", {
@@ -302,13 +262,10 @@
                 replace: false,
             });
         }
-        */
-
 
     });
 
-
-    // recommendations
+    // trends
     App.Views.Trends = Backbone.View.extend({
         //template: template("templates/data-visuals.html"),
         //el: ".data-visuals",
