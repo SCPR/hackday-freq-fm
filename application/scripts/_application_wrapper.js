@@ -34,9 +34,9 @@
         },
 
         render: function(){
-            $(".kpcc-header").html(_.template(template("templates/kpcc-header.html")));
-            $(".data-details").html(_.template(template("templates/data-details.html")));
-            $(".kpcc-footer").html(_.template(template("templates/kpcc-footer.html")));
+            //$(".kpcc-header").html(_.template(template("templates/header.html")));
+            $(".data-details").html(_.template(template("templates/welcome.html")));
+            //$(".kpcc-footer").html(_.template(template("templates/footer.html")));
         }
 
     });
