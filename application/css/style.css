@@ -13,6 +13,7 @@
 .input, input {
     border:0;
     border-bottom: 1px solid #aaa;
+    border-radius: 0;
     color: #343434;
     font-family: Alright Sans, sans-serif;
     font-size: 12px;
