@@ -1,96 +1,76 @@
 [{
-    "uuid": 1,
-    "user_name": "Johnny Ferguson",
+    "user_name": "AirTalk",
+    "user_slug": "airtalk",
+    "user_avatar": null,
+    "uuid": 100,
     "following": false,
     "user_role": "show",
     "history": []
 }, {
-    "uuid": 2,
-    "user_name": "David Hill",
+    "user_name": "Take Two",
+    "user_slug": "take-two",
+    "user_avatar": null,
+    "uuid": 101,
     "following": false,
     "user_role": "show",
     "history": []
 }, {
-    "uuid": 3,
-    "user_name": "Albert Ellis",
+    "user_name": "FilmWeek",
+    "user_slug": "filmweek",
+    "user_avatar": null,
+    "uuid": 102,
     "following": true,
     "user_role": "show",
     "history": []
 }, {
-    "uuid": 4,
+    "user_name": "Off-Ramp",
+    "user_slug": "offramp",
+    "user_avatar": null,
+    "uuid": 103,
+    "following": false,
+    "user_role": "show",
+    "history": []
+}, {
+    "user_name": "The Loh Down On Science",
+    "user_slug": "loh-down-on-science",
+    "user_avatar": null,
+    "uuid": 104,
+    "following": true,
+    "user_role": "show",
+    "history": []
+}, {
+    "uuid": 1,
+    "user_name": "Johnny Ferguson",
+    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/73.jpg",
+    "following": false,
+    "user_role": "user",
+    "history": []
+}, {
+    "uuid": 2,
     "user_name": "Janice Hayes",
+    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/73.jpg",
+    "following": false,
+    "user_role": "user",
+    "history": []
+}, {
+    "uuid": 3,
+    "user_name": "Albert Ellis",
+    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/peterlandt/73.jpg",
+    "following": true,
+    "user_role": "user",
+    "history": []
+}, {
+    "uuid": 4,
+    "user_name": "Allison Grayce",
+    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/allisongrayce/73.jpg",
     "following": true,
     "user_role": "user",
     "history": []
 }, {
     "uuid": 5,
     "user_name": "Arthur Fuller",
+    "user_avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/boheme/73.jpg",
     "following": false,
     "user_role": "user",
     "history": []
-}, {
-    "uuid": 6,
-    "user_name": "Jerry Peterson",
-    "following": true,
-    "user_role": "user",
-    "history": []
-}, {
-    "uuid": 7,
-    "user_name": "Rebecca Bell",
-    "following": false,
-    "user_role": "show",
-    "history": []
-}, {
-    "uuid": 8,
-    "user_name": "Brandon Bishop",
-    "following": true,
-    "user_role": "show",
-    "history": []
-}, {
-    "uuid": 9,
-    "user_name": "Willie Scott",
-    "following": false,
-    "user_role": "show",
-    "history": []
-}, {
-    "uuid": 10,
-    "user_name": "Judith Berry",
-    "following": true,
-    "user_role": "show",
-    "history": []
-}, {
-    "uuid": 11,
-    "user_name": "Judy Porter",
-    "following": true,
-    "user_role": "user",
-    "history": []
-}, {
-    "uuid": 12,
-    "user_name": "Heather Hayes",
-    "following": true,
-    "user_role": "user",
-    "history": []
-}, {
-    "uuid": 13,
-    "user_name": "Judy Dixon",
-    "following": false,
-    "user_role": "user",
-    "history": []
-}, {
-    "uuid": 14,
-    "user_name": "Frank Morales",
-    "following": false,
-    "user_role": "user",
-    "history": []
-}, {
-    "uuid": 15,
-    "user_name": "Nancy Gutierrez",
-    "following": false,
-    "user_role": "show",
-    "history": []
-}, {
-    "uuid": 16,
-    "user_name": "Peter Ryan",
-    "following": true,
-    "user_role": "show",
 }]
