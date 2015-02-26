@@ -1,14 +1,10 @@
     App.Router = Backbone.Router.extend({
 
         initialize: function(){
-
             window.UsersCollection = new App.Collections.Users();
-
             window.UsersCollection.fetch({
                 async: false,
             });
-
-
         },
 
         routes: {
@@ -16,7 +12,7 @@
             "welcome/": "renderWelcomeScreen",
             "sign-in/": "renderLogInScreen",
             "follow-shows/": "renderFollowShowsScreen",
-            "follow-people/": "renderFollowPeopleScreen",
+            "follow-friends/": "renderFollowPeopleScreen",
             "recommendations/": "renderRecommendationsScreen",
         },
 
@@ -155,7 +151,7 @@
         },
 
         navigateToPeople: function(){
-            window.app.navigate("#follow-people/", {
+            window.app.navigate("#follow-friends/", {
                 trigger: true,
                 replace: false,
             });
@@ -235,14 +231,10 @@
 
         initialize: function(object){
 
-            console.log("recommendations");
-
             window.ContentCollection = new App.Collections.ContentStreams();
             window.ContentCollection.fetch({
                 async: false,
             });
-
-            console.log(window.ContentCollection);
 
             this.render(object.container);
 
