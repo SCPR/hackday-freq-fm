@@ -1,0 +1,46 @@
+/* BUTTON STYLES */
+.btn {
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50px;
+    font-weight: 400;
+    line-height: 1em;
+    padding: 4px 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+    .btn--green {
+        border-color: #21C064;
+        color: #21C064;
+    }
+    .btn--lg {
+        font-size: 15px;
+        padding: 14px 0 10px;
+        width: 240px;
+    }
+
+/* WELCOME VIEW */
+.welcome {
+    text-align: center;
+}
+    .branding {
+        background: url('../images/bg-welcome.png');
+        background-size: cover;
+        color: white;
+        min-height:345px;
+    }
+        .branding h2 {
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .logo {
+            display: block;
+            margin:0 auto;
+            padding: 100px 0 90px;
+            width: 192px;
+        }
+    .next-step {
+        padding-top: 70px;
+    }
