@@ -1,7 +1,9 @@
-App.Collections.WaterIncentives = Backbone.Collection.extend({
+App.Collections.Users = Backbone.Collection.extend({
+    model: App.Models.User,
+    url: "data/application_users.json",
+});
 
-    model: App.Models.WaterIncentive,
-
-    url: "data/incentives_by_district.json",
-
+App.Collections.ContentStreams = Backbone.Collection.extend({
+    model: App.Models.Content,
+    url: "data/application_content.json",
 });
